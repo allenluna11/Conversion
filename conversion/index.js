@@ -9,13 +9,8 @@ btn.addEventListener("click", () => {
 
         if(validate == ""){
             output.innerHTML = "Please input the number";
-        }else if (output.innerHTML = numberToWords.toWords(text.value)){
-            output.innerHTML = "Letter is invalid";
         }else{
             output.innerHTML = numberToWords.toWords(text.value)
         }
-
-        
-
 
 });
