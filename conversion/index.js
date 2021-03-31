@@ -5,15 +5,17 @@ const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
 
-        var myStr = new RegExp('^[0-9]+$');
+        var validate = text.value;
 
-    if (myStr != "") {
+        if(validate == ""){
+            output.innerHTML = "Please input the number";
+        }else if (output.innerHTML = numberToWords.toWords(text.value)){
+            output.innerHTML = "Letter is invalid";
+        }else{
+            output.innerHTML = numberToWords.toWords(text.value)
+        }
 
-        output.innerText = numberToWords.toWords(text.value);
-    } else {
-        output.innerHTML = "Invalid";
-    }
-
+        
 
 
 });
